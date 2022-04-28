@@ -1,0 +1,87 @@
+.navbar, .container, footer   {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.hero {
+    height: 60vh;
+    width: 100%;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-family: 'Shizuru', cursive;
+    font-size: 5rem;
+}
+
+.text-block {
+    position: absolute;
+    top: 30%;
+    left:30%;
+    background: black;    
+    background: rgba(0, 0, 0, 0.5);     
+    color: white;  
+    width: 40%;
+    min-width:15rem;
+    padding: .75rem;
+    text-align: center;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.card h5    {
+    text-align: center;
+}
+
+.vaccinetrue    {
+    background-color:#5cb85c;
+    padding: .5rem;
+}
+.vaccinefalse   {
+    background-color: #d9534f;
+    padding: .5rem;
+}
+
+.footer {
+    color:white;
+    width:100%;
+    padding:1.5rem;
+    margin-top: 2rem;
+}
+
+.footerContent  {
+    margin:auto;
+    width:60%;
+    text-align:center;
+}
+
+.footer img{
+    width:2rem;
+    height:auto;
+    margin: 0 1rem 1rem 1rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 665px) {
+.hero h1 {
+    font-family: 'Shizuru', cursive;
+    font-size: 3rem;
+    }
+.text-block {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    min-width: 10rem;
+    padding: .25rem;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 425px) {
+    .card img {
+        display: none;
+        }
+    }

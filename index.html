@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Shizuru&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--begin navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Powell's Pets</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+
+                    <button id="sortBtn" class="btn btn-sm btn-outline-light ms-2" type="button">Sort by age</button>
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+
+    <!--begin .hero-->
+    <div class="hero">
+        <div class="text-block">
+            <h1>Powell's Pets</h1>
+        </div>
+    </div>
+    <!--end .hero-->
+
+    <!--begin .container-->
+    <div class="container">
+        <div id="row" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+    </div>
+    <!--end .container-->
+
+    <!--begin .footer-->
+    <div class="footer bg-dark">
+        <div class="footerContent">
+
+            <img src="img/facebook.png"><img src="img/linkedin.png"><img src="img/instagram.png"><img
+                src="img/youtube.png">
+            <h2>Sign up for our newsletter!</h2>
+            <br>
+            <input type="email" class="form-control form-control-lg" id="colFormLabelLg"
+                placeholder="johndoe@email.com">
+            <br>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <br><br>
+            <small class="text-muted">Created by Joshua Powell</small>
+            <small class="text-muted">&copy; 2022</small>
+        </div>
+    </div>
+    <!--end .footer-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script>
+        document.querySelector("#sortBtn").addEventListener('click', myFunction);
+        function myFunction() {
+            Swal.fire(
+                'Everything is sorted!',
+                'The animals will now be listed from oldest to youngest.',
+                'success')        
+ };
+    </script>
+    <script src='scripts/bootstrap.bundle.min.js'></script>
+    <script src='scripts/script.js'></script>
+</body>
+
+</html>
